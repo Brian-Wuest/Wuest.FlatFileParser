@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Wuest.FlatFileParser.FlatFile.Segment
+﻿namespace Wuest.FlatFileParser.FlatFile.Segment
 {
+	using System;
+	using Wuest.FlatFileParser.Definition.Segment;
+
 	public interface ISegmentValue
 	{
 		#region Properties
 
-
+		public SegmentDefinition Definition { get; set; }
 
 		#endregion
 

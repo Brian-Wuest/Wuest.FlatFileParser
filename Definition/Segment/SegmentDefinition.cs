@@ -1,11 +1,7 @@
 ﻿namespace Wuest.FlatFileParser.Definition.Segment
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
 	using Wuest.FlatFileParser.Definition.Enums;
+	using Wuest.FlatFileParser.Definition.Settings;
 
 	public abstract class SegmentDefinition
 	{
@@ -13,11 +9,13 @@
 
 		public string Name { get; set; }
 
-		public Object OrientationSettings { get; set; }
+		public SegmentOrientationSettings OrientationSettings { get; set; }
 
-		public Object ExtractionSettings { get; set; }
+		public SegmentExtractionSettings ExtractionSettings { get; set; }
 
 		public SegmentType SegmentType { get; set; }
+
+		// TODO: Think about null value?
 
 		#endregion
 	}

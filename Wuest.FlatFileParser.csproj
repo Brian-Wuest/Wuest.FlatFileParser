@@ -6,10 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Definition\Settings\" />
-    <Folder Include="Definition\Segment\" />
-    <Folder Include="FlatFile\Segment\" />
-  </ItemGroup>
-
 </Project>
