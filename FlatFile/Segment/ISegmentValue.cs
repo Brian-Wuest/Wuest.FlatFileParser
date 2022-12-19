@@ -9,6 +9,8 @@
 
 		public SegmentDefinition Definition { get; set; }
 
+		public string OriginalValue { get; protected set; }
+
 		#endregion
 
 		#region Methods

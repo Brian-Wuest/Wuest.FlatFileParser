@@ -1,10 +1,6 @@
 ﻿namespace Wuest.FlatFileParser.FlatFile.Segment
 {
 	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
 	using Wuest.FlatFileParser.Definition.Segment;
 
 	public class DecimalSegmentValue : ISegmentValue
@@ -12,6 +8,8 @@
 		internal decimal? value;
 
 		public SegmentDefinition Definition { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+		string ISegmentValue.OriginalValue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
 		public string GetFormattedValue()
 		{
