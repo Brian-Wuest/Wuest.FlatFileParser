@@ -8,7 +8,7 @@
 	{
 		#region Properties
 
-		public List<ISegmentValue> Segments { get; set; }
+		public List<SegmentValue> Segments { get; set; }
 
 		public LineDefinition Definition { get; set; }
 

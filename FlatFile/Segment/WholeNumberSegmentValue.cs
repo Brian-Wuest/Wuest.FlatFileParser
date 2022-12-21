@@ -3,20 +3,16 @@
 	using System;
 	using Wuest.FlatFileParser.Definition.Segment;
 
-	public class WholeNumberSegmentValue : ISegmentValue
+	public class WholeNumberSegmentValue : SegmentValue
 	{
 		internal int? value;
 
-		public SegmentDefinition Definition { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-		string ISegmentValue.OriginalValue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-		public string GetFormattedValue()
+		public override string GetFormattedValue()
 		{
 			throw new NotImplementedException();
 		}
 
-		public void SetValue(object value)
+		protected override void OnSetValue(object value)
 		{
 			throw new NotImplementedException();
 		}

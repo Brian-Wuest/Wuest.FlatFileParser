@@ -29,7 +29,7 @@
 		/// <summary>
 		/// gets or sets the length of the field.
 		/// </summary>
-		public short Length { get; set; }
+		public int Length { get; set; }
 
 		/// <summary>
 		/// Gets or sets a value indicating whether any existing whitespace will be trimmed from the field value before adding any padding.
